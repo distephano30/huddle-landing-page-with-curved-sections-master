@@ -1,0 +1,387 @@
+/* Default Styles */
+:root{
+  --pink: hsl(322, 100%, 66%);
+  --cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --blue: hsl(208, 11%, 55%);
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: var(--body-font);
+}
+/* header styles */
+header{
+  width: 100%;
+}
+.header{
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  width: 15%;
+}
+.logo > img{
+  width: 100%;
+}
+.btn{
+  padding: 10px 25px;
+  border: solid .3px var(--pink);
+  color: var(--pink);
+  border-radius: 40px;
+  font-size: 14px;
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 14px 5px rgba(199,199,199,0.75);
+box-shadow: 0px 5px 14px 5px rgba(199,199,199,0.75);
+cursor: pointer;
+}
+.header-content{
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-main{
+  width: 70%;
+  text-align: center;
+}
+.header-content > img {
+  width: 70%;
+}
+h1{
+  font-family: var(--heading-font);
+  font-size: 40px;
+  margin: 10px 0;
+}
+.header-main > p{
+  width: 50%;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 15px auto;
+}
+.btn-started{
+  font-size: 16px;
+  margin: 30px auto;
+  padding: 20px 60px;
+  color: white;
+  background-color: var(--pink);
+}
+.btn-started:hover{
+  opacity: .8;
+  transition: .5s;
+}
+
+/* section styles */
+.counter-box{
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.infos:nth-of-type(1):before{
+  display: block;
+  content: "";
+  background: url('images/icon-communities.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.infos:nth-of-type(2):before{
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url('images/icon-messages.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.counter{
+  font-size: 75px;
+  font-weight: bolder;
+  margin: 0;
+  text-align: left;
+}
+.counter-text{
+  font-size: 20px;
+  color: var(--blue);
+  margin: 0;
+}
+section{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+  background-color: #f2f6f7;
+}
+section svg{
+  display: block;
+}
+
+section:nth-of-type(1){
+  margin-top: 0;
+  margin-bottom: 0;
+}
+section:nth-of-type(2){
+  background-color: inherit;
+}
+.section-content{
+  width: 80%;
+  height: auto;
+  margin: 0 auto 5px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+article{
+  width: 45%;
+  padding: 40px;
+}
+.section-content > img {
+  width: 35%;
+  height: 300px;
+}
+h2{
+  font-size: 26px;
+  font-weight: bolder;
+}
+article > p{
+  margin: 20px 0;
+  color: #88807d;
+}
+.ad{
+  width: 55%;
+  margin: 20px auto 0;
+  text-align: center;
+}
+.ad > h2 {
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.btn-ad{
+  font-size: 16px;
+  padding: 20px 60px;
+  margin: 10px 0 50px 0;
+}
+/* footer styles */
+footer{
+  width: 100%;
+  color: white;
+  background-color: var(--dark-cyan);
+  padding: 0;
+}
+.footer-main{
+  width: 90%;
+  margin: 0 auto;;
+  display: flex;
+  justify-content: space-around;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 25%;
+  margin: 50px 0 20px 0;
+}
+.contact > .logo {
+  width: 80%;
+}
+.contact > .logo > img {
+  filter: brightness(0) invert(1);
+}
+.contact-info{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.contact-info > img {
+  width: 20px;
+  height: 20px;
+}
+.contact-info > p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.personal-info{
+  margin-left: 30px;
+}
+.socials{
+  margin-top: 30px;
+}
+
+ a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: var(--pink);
+  font-weight: bolder;
+  transition : all .5s ease-in-out;
+}
+ion-icon{
+  width: 20px;
+  height: 20px;
+  border: solid .4px white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 15px;
+}
+.newsletter{
+  width: 45%;
+  margin: 40px 0;
+}
+h3{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.newsletter > p{
+  width: 60%;
+  font-size: 14px;
+  font-weight: normal;
+}
+input{
+  height: 40px;
+  width: 280px;
+  border-radius: 7px;
+}
+.subscribe-btn{
+  height: 40px;
+  background-color: var(--pink);
+  color: white;
+  margin: 0 50px;
+  padding: 0 45px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.subscribe-btn:hover{
+  opacity: .4;
+}
+
+/* responsive 900px */
+@media (max-width:1024px) {
+  .logo{
+    width: 35%;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .header-main{
+    width: 90%;
+  }
+  .header-main > p{
+    width: 100%;
+  }
+  .counter-box{
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .infos{
+    margin: 30px 0;
+  }
+  h2{
+    font-size: 21px;
+  }
+  article > p{
+    font-size: 15px;
+  }
+
+  /* section styles */
+  section{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+  }
+  .section-content{
+    width: 90%;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .section2{
+    flex-direction: column;
+  }
+  article{
+    width: 85%;
+    padding: 40px;
+    text-align: center;
+  }
+  .section-content > img {
+    width: 75%;
+    height: auto;
+    margin: 70px auto 20px auto;
+  }
+  .ad{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .btn-ad{
+    font-size: 16px;
+  }
+  /* the footer styles */
+  footer svg{
+    display: block;
+  }
+  .footer-main{
+    flex-direction: column-reverse;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .newsletter{
+    width: 100%;
+  }
+  .contact{
+    width: 90%;
+    margin: 100px 0 30px 0;
+  }
+  .socials{
+    margin: 50px auto 25px 0;
+  }
+  h3{
+    font-size: 1.9rem;
+  }
+  .newsletter > p{
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  input{
+    width: 100%;
+    height: 50px;
+  }
+  .subscribe-btn{
+    width: 45%;
+    margin: 20px 0;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+}
