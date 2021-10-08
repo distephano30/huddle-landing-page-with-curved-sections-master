@@ -30,10 +30,11 @@ header{
   width: 100%;
 }
 .header{
-  width: 90%;
-  margin: auto;
+  /* width: 90%; */
+  margin: auto 5%;
   padding: 30px 0;
   display: flex;
+  flex: 1 1 50%;
   justify-content: space-between;
 }
 .logo{
@@ -54,8 +55,7 @@ box-shadow: 0px 5px 14px 5px rgba(199,199,199,0.75);
 cursor: pointer;
 }
 .header-content{
-  width: 90%;
-  margin: 50px auto;
+  margin: 50px 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,11 +93,9 @@ h1{
 
 /* section styles */
 .counter-box{
-  width: 70%;
-  margin: 10px auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  margin: 10px 15%;
 }
 .infos:nth-of-type(1):before{
   display: block;
@@ -147,9 +145,8 @@ section:nth-of-type(2){
   background-color: inherit;
 }
 .section-content{
-  width: 80%;
   height: auto;
-  margin: 0 auto 5px;
+  margin: 0 10% 5px;
   display: flex;
   align-items: center;
   justify-content:space-around;
@@ -193,8 +190,7 @@ footer{
   padding: 0;
 }
 .footer-main{
-  width: 90%;
-  margin: 0 auto;;
+  margin: 0 5% auto;
   display: flex;
   justify-content: space-around;
 }
@@ -317,7 +313,6 @@ input{
     margin: 30px auto;
   }
   .section-content{
-    width: 90%;
     height: auto;
     flex-direction: column-reverse;
   }
@@ -342,9 +337,6 @@ input{
     font-size: 16px;
   }
   /* the footer styles */
-  footer svg{
-    display: block;
-  }
   .footer-main{
     flex-direction: column-reverse;
     width: 80%;
